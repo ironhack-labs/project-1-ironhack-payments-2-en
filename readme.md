@@ -44,6 +44,8 @@ Assess the quality of the dataset by identifying missing values, data inconsiste
 2. **StreamLit**: Read about the StreamLit package and create a StreamLit app about this data (you can leverage on ideias from your dashboard)
 3. **OPP vs Function**: Take your code and replicate it using an oposite strategy than you have done.
 
+### Tableau LINK https://public.tableau.com/app/profile/caroline.araujo7575/viz/IronHackPaymentProject_17268419095340/Dashboard1
+
 <!-- this version uses Tableau which consorci doesn't use -->
 
 <!-- https://github.com/ironhack-labs/project-1-ironhack-payments-2-en -->
