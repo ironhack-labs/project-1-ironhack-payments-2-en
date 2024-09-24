@@ -321,9 +321,9 @@ plt.ylabel('Amount ($)')
 plt.show()
 
 # Convert DataFrames to .csv
-cohorts.to_csv('frequency_of_usage.csv', index=True)
-revenue_per_month.to_csv('revenue_per_month.csv', index=True)
-incident_rate.to_csv('incident_rate.csv', index=True)
-loss_revenue.to_csv('loss_revenue.csv',index=True)
+cohorts.to_csv('./Tableu csv/frequency_of_usage.csv', index=True)
+revenue_per_month.to_csv('./Tableu csv/revenue_per_month.csv', index=True)
+incident_rate.to_csv('./Tableu csv/incident_rate.csv', index=True)
+loss_revenue.to_csv('./Tableu csv/loss_revenue.csv',index=True)
 print("csv file created")
 
