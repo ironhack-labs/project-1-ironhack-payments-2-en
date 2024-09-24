@@ -12,7 +12,7 @@ decisions on data preprocessing and analysis strategies."""
 
 # STEP 1: Read the document and Create a Dataframe
 # Document type: CSV
-df_cash = pd.read_csv("project_dataset\extract - cash request - data analyst.csv.csv")
+df_cash = pd.read_csv("project_dataset\extract - cash request - data analyst.csv")
 
 # STEP 2: Start the Exploratory Analysis
 
