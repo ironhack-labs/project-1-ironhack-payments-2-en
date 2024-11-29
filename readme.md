@@ -38,12 +38,8 @@ Assess the quality of the dataset by identifying missing values, data inconsiste
 3. **Exploratory Data Analysis Report:** Prepare a report summarizing the findings from your exploratory data analysis. Include visualizations and insights that help understand the dataset.
 4. **Data Quality Analysis Report:** Document the results of your data quality analysis, highlighting any issues and the steps taken to resolve them.
 5. **Short Presentation:** Create a concise presentation (maximum of 4 slides) summarizing your findings from the cohort analysis and key insights gained from EDA and data quality analysis. This presentation should be suitable for sharing with the IronHack Payments team.
-   
+
 ### Bonus:
 1. **Operationalize your analysis**: Make sure all the code is in a .py that can be called from the Terminal and whose execution makes sense (if in doubt, ask the Teacher for clarification on this)
 2. **StreamLit**: Read about the StreamLit package and create a StreamLit app about this data (you can leverage on ideias from your dashboard)
 3. **OPP vs Function**: Take your code and replicate it using an oposite strategy than you have done.
-
-<!-- this version uses Tableau which consorci doesn't use -->
-
-<!-- https://github.com/ironhack-labs/project-1-ironhack-payments-2-en -->
