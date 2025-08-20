@@ -47,3 +47,7 @@ Assess the quality of the dataset by identifying missing values, data inconsiste
 <!-- this version uses Tableau which consorci doesn't use -->
 
 <!-- https://github.com/ironhack-labs/project-1-ironhack-payments-2-en -->
+
+## Tableau Dashboard:
+
+https://public.tableau.com/views/IronHackPaymentProject_17268419095340/Dashboard1?:language=pt-BR&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
