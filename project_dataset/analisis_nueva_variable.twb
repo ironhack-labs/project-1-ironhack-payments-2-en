@@ -1,0 +1,1703 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20251.25.0313.2002                               -->
+<workbook original-version='18.1' source-build='2025.1.0 (20251.25.0313.2002)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <CustomReferenceLineTooltips />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='max_value' datatype='real' name='[Parámetro 1]' param-domain-type='any' role='measure' type='quantitative' value='1.0'>
+        <calculation class='tableau' formula='1.0' />
+      </column>
+    </datasource>
+    <datasource caption='extract - cash request - data a (Varias conexiones)' inline='true' name='federated.0avzni01hmrddv1ffzglx0phv2jg' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='extract - cash request - data analyst' name='excel-direct.0mztxoj0487ztv1fmiukw0v0hlwf'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/Javier/iron-hack/week4/project-ironhack-payments/project_dataset/extract - cash request - data analyst.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+          <named-connection caption='extract - fees - data analyst -' name='excel-direct.1d5920r0nlmzem146idse0bhgx4l'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/Javier/iron-hack/week4/project-ironhack-payments/project_dataset/extract - fees - data analyst - .xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+          <named-connection caption='df_nueva_metrica_clean' name='excel-direct.0032z2x1ylqzvq16x1vq609rwjok'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/Javier/iron-hack/week4/project-ironhack-payments/project_dataset/df_nueva_metrica_clean.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.0mztxoj0487ztv1fmiukw0v0hlwf' name='extract - cash request - data a' table='[&apos;extract - cash request - data a$&apos;]' type='table'>
+          <columns gridOrigin='A1:P10001:no:A1:P10001:0' header='yes' outcome='2'>
+            <column datatype='integer' name='id' ordinal='0' />
+            <column datatype='string' name='amount' ordinal='1' />
+            <column datatype='string' name='status' ordinal='2' />
+            <column datatype='string' name='created_at' ordinal='3' />
+            <column datatype='string' name='updated_at' ordinal='4' />
+            <column datatype='integer' name='user_id' ordinal='5' />
+            <column datatype='string' name='moderated_at' ordinal='6' />
+            <column datatype='integer' name='deleted_account_id' ordinal='7' />
+            <column datatype='string' name='reimbursement_date' ordinal='8' />
+            <column datatype='date' name='cash_request_received_date' ordinal='9' />
+            <column datatype='string' name='money_back_date' ordinal='10' />
+            <column datatype='string' name='transfer_type' ordinal='11' />
+            <column datatype='string' name='send_at' ordinal='12' />
+            <column datatype='string' name='recovery_status' ordinal='13' />
+            <column datatype='string' name='reco_creation' ordinal='14' />
+            <column datatype='string' name='reco_last_update' ordinal='15' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[extract - cash request - data a]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:P10001:no:A1:P10001:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[id]</local-name>
+            <parent-name>[extract - cash request - data a]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[extract - cash request - data a_64C0196C8ED949B19E3A8BC79106A4FE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>amount</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[amount]</local-name>
+            <parent-name>[extract - cash request - data a]</parent-name>
+            <remote-alias>amount</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[extract - cash request - data a_64C0196C8ED949B19E3A8BC79106A4FE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>status</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[status]</local-name>
+            <parent-name>[extract - cash request - data a]</parent-name>
+            <remote-alias>status</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[extract - cash request - data a_64C0196C8ED949B19E3A8BC79106A4FE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>created_at</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[created_at]</local-name>
+            <parent-name>[extract - cash request - data a]</parent-name>
+            <remote-alias>created_at</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[extract - cash request - data a_64C0196C8ED949B19E3A8BC79106A4FE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>updated_at</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[updated_at]</local-name>
+            <parent-name>[extract - cash request - data a]</parent-name>
+            <remote-alias>updated_at</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[extract - cash request - data a_64C0196C8ED949B19E3A8BC79106A4FE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>user_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[user_id]</local-name>
+            <parent-name>[extract - cash request - data a]</parent-name>
+            <remote-alias>user_id</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[extract - cash request - data a_64C0196C8ED949B19E3A8BC79106A4FE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>moderated_at</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[moderated_at]</local-name>
+            <parent-name>[extract - cash request - data a]</parent-name>
+            <remote-alias>moderated_at</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[extract - cash request - data a_64C0196C8ED949B19E3A8BC79106A4FE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>deleted_account_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[deleted_account_id]</local-name>
+            <parent-name>[extract - cash request - data a]</parent-name>
+            <remote-alias>deleted_account_id</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[extract - cash request - data a_64C0196C8ED949B19E3A8BC79106A4FE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reimbursement_date</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[reimbursement_date]</local-name>
+            <parent-name>[extract - cash request - data a]</parent-name>
+            <remote-alias>reimbursement_date</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[extract - cash request - data a_64C0196C8ED949B19E3A8BC79106A4FE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cash_request_received_date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[cash_request_received_date]</local-name>
+            <parent-name>[extract - cash request - data a]</parent-name>
+            <remote-alias>cash_request_received_date</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[extract - cash request - data a_64C0196C8ED949B19E3A8BC79106A4FE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>money_back_date</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[money_back_date]</local-name>
+            <parent-name>[extract - cash request - data a]</parent-name>
+            <remote-alias>money_back_date</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[extract - cash request - data a_64C0196C8ED949B19E3A8BC79106A4FE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>transfer_type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[transfer_type]</local-name>
+            <parent-name>[extract - cash request - data a]</parent-name>
+            <remote-alias>transfer_type</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[extract - cash request - data a_64C0196C8ED949B19E3A8BC79106A4FE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>send_at</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[send_at]</local-name>
+            <parent-name>[extract - cash request - data a]</parent-name>
+            <remote-alias>send_at</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[extract - cash request - data a_64C0196C8ED949B19E3A8BC79106A4FE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>recovery_status</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[recovery_status]</local-name>
+            <parent-name>[extract - cash request - data a]</parent-name>
+            <remote-alias>recovery_status</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[extract - cash request - data a_64C0196C8ED949B19E3A8BC79106A4FE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reco_creation</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[reco_creation]</local-name>
+            <parent-name>[extract - cash request - data a]</parent-name>
+            <remote-alias>reco_creation</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[extract - cash request - data a_64C0196C8ED949B19E3A8BC79106A4FE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reco_last_update</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[reco_last_update]</local-name>
+            <parent-name>[extract - cash request - data a]</parent-name>
+            <remote-alias>reco_last_update</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[extract - cash request - data a_64C0196C8ED949B19E3A8BC79106A4FE]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='extract - cash request - data a' datatype='table' name='[__tableau_internal_object_id__].[extract - cash request - data a_64C0196C8ED949B19E3A8BC79106A4FE]' role='measure' type='quantitative' />
+      <column caption='Amount' datatype='string' name='[amount]' role='dimension' type='nominal' />
+      <column caption='Cash Request Received Date' datatype='date' name='[cash_request_received_date]' role='dimension' type='ordinal' />
+      <column caption='Created At' datatype='string' name='[created_at]' role='dimension' type='nominal' />
+      <column caption='Deleted Account Id' datatype='integer' name='[deleted_account_id]' role='dimension' type='ordinal' />
+      <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+      <column caption='Moderated At' datatype='string' name='[moderated_at]' role='dimension' type='nominal' />
+      <column caption='Money Back Date' datatype='string' name='[money_back_date]' role='dimension' type='nominal' />
+      <column caption='Reco Creation' datatype='string' name='[reco_creation]' role='dimension' type='nominal' />
+      <column caption='Reco Last Update' datatype='string' name='[reco_last_update]' role='dimension' type='nominal' />
+      <column caption='Recovery Status' datatype='string' name='[recovery_status]' role='dimension' type='nominal' />
+      <column caption='Reimbursement Date' datatype='string' name='[reimbursement_date]' role='dimension' type='nominal' />
+      <column caption='Send At' datatype='string' name='[send_at]' role='dimension' type='nominal' />
+      <column caption='Status' datatype='string' name='[status]' role='dimension' type='nominal' />
+      <column caption='Transfer Type' datatype='string' name='[transfer_type]' role='dimension' type='nominal' />
+      <column caption='Updated At' datatype='string' name='[updated_at]' role='dimension' type='nominal' />
+      <column caption='User Id' datatype='integer' name='[user_id]' role='dimension' type='ordinal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='es_ES' class='hyper' dbname='C:/Users/Javier/AppData/Local/Temp/TableauTemp/#TableauTemp_0usf1fs1elz6ty13rxcda0g9cib4.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='11/10/2025 11:18:57 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>extract - cash request - data a</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>23970</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[extract - cash request - data a_64C0196C8ED949B19E3A8BC79106A4FE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>amount</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[amount]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>amount</remote-alias>
+              <ordinal>1</ordinal>
+              <family>extract - cash request - data a</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>33</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LES_RES_S2' />
+              <object-id>[extract - cash request - data a_64C0196C8ED949B19E3A8BC79106A4FE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>status</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[status]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>status</remote-alias>
+              <ordinal>2</ordinal>
+              <family>extract - cash request - data a</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LES_RES_S2' />
+              <object-id>[extract - cash request - data a_64C0196C8ED949B19E3A8BC79106A4FE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>created_at</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[created_at]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>created_at</remote-alias>
+              <ordinal>3</ordinal>
+              <family>extract - cash request - data a</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>23970</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LES_RES_S2' />
+              <object-id>[extract - cash request - data a_64C0196C8ED949B19E3A8BC79106A4FE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>updated_at</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[updated_at]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>updated_at</remote-alias>
+              <ordinal>4</ordinal>
+              <family>extract - cash request - data a</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>23970</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LES_RES_S2' />
+              <object-id>[extract - cash request - data a_64C0196C8ED949B19E3A8BC79106A4FE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>user_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[user_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>user_id</remote-alias>
+              <ordinal>5</ordinal>
+              <family>extract - cash request - data a</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7020</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[extract - cash request - data a_64C0196C8ED949B19E3A8BC79106A4FE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>moderated_at</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[moderated_at]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>moderated_at</remote-alias>
+              <ordinal>6</ordinal>
+              <family>extract - cash request - data a</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>18235</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LES_RES_S2' />
+              <object-id>[extract - cash request - data a_64C0196C8ED949B19E3A8BC79106A4FE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>deleted_account_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[deleted_account_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>deleted_account_id</remote-alias>
+              <ordinal>7</ordinal>
+              <family>extract - cash request - data a</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1225</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[extract - cash request - data a_64C0196C8ED949B19E3A8BC79106A4FE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>reimbursement_date</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[reimbursement_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>reimbursement_date</remote-alias>
+              <ordinal>8</ordinal>
+              <family>extract - cash request - data a</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1560</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LES_RES_S2' />
+              <object-id>[extract - cash request - data a_64C0196C8ED949B19E3A8BC79106A4FE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>cash_request_received_date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[cash_request_received_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>cash_request_received_date</remote-alias>
+              <ordinal>9</ordinal>
+              <family>extract - cash request - data a</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>406</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[extract - cash request - data a_64C0196C8ED949B19E3A8BC79106A4FE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>money_back_date</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[money_back_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>money_back_date</remote-alias>
+              <ordinal>10</ordinal>
+              <family>extract - cash request - data a</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4747</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LES_RES_S2' />
+              <object-id>[extract - cash request - data a_64C0196C8ED949B19E3A8BC79106A4FE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>transfer_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[transfer_type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>transfer_type</remote-alias>
+              <ordinal>11</ordinal>
+              <family>extract - cash request - data a</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LES_RES_S2' />
+              <object-id>[extract - cash request - data a_64C0196C8ED949B19E3A8BC79106A4FE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>send_at</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[send_at]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>send_at</remote-alias>
+              <ordinal>12</ordinal>
+              <family>extract - cash request - data a</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>18767</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LES_RES_S2' />
+              <object-id>[extract - cash request - data a_64C0196C8ED949B19E3A8BC79106A4FE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>recovery_status</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[recovery_status]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>recovery_status</remote-alias>
+              <ordinal>13</ordinal>
+              <family>extract - cash request - data a</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LES_RES_S2' />
+              <object-id>[extract - cash request - data a_64C0196C8ED949B19E3A8BC79106A4FE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>reco_creation</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[reco_creation]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>reco_creation</remote-alias>
+              <ordinal>14</ordinal>
+              <family>extract - cash request - data a</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5977</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LES_RES_S2' />
+              <object-id>[extract - cash request - data a_64C0196C8ED949B19E3A8BC79106A4FE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>reco_last_update</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[reco_last_update]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>reco_last_update</remote-alias>
+              <ordinal>15</ordinal>
+              <family>extract - cash request - data a</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5977</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LES_RES_S2' />
+              <object-id>[extract - cash request - data a_64C0196C8ED949B19E3A8BC79106A4FE]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;España&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='extract - cash request - data a' id='extract - cash request - data a_64C0196C8ED949B19E3A8BC79106A4FE'>
+            <properties context=''>
+              <relation connection='excel-direct.0mztxoj0487ztv1fmiukw0v0hlwf' name='extract - cash request - data a' table='[&apos;extract - cash request - data a$&apos;]' type='table'>
+                <columns gridOrigin='A1:P10001:no:A1:P10001:0' header='yes' outcome='2'>
+                  <column datatype='integer' name='id' ordinal='0' />
+                  <column datatype='string' name='amount' ordinal='1' />
+                  <column datatype='string' name='status' ordinal='2' />
+                  <column datatype='string' name='created_at' ordinal='3' />
+                  <column datatype='string' name='updated_at' ordinal='4' />
+                  <column datatype='integer' name='user_id' ordinal='5' />
+                  <column datatype='string' name='moderated_at' ordinal='6' />
+                  <column datatype='integer' name='deleted_account_id' ordinal='7' />
+                  <column datatype='string' name='reimbursement_date' ordinal='8' />
+                  <column datatype='date' name='cash_request_received_date' ordinal='9' />
+                  <column datatype='string' name='money_back_date' ordinal='10' />
+                  <column datatype='string' name='transfer_type' ordinal='11' />
+                  <column datatype='string' name='send_at' ordinal='12' />
+                  <column datatype='string' name='recovery_status' ordinal='13' />
+                  <column datatype='string' name='reco_creation' ordinal='14' />
+                  <column datatype='string' name='reco_last_update' ordinal='15' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='df_nueva_metrica_clean (df_nueva_metrica_clean)' inline='true' name='federated.0ittgv20shrknj123sqq30rvmt96' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='df_nueva_metrica_clean' name='excel-direct.1p8vnc81wqd5hb1fxebb70jkhsjn'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/Javier/iron-hack/week4/project-ironhack-payments/project_dataset/df_nueva_metrica_clean.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1p8vnc81wqd5hb1fxebb70jkhsjn' name='df_nueva_metrica_clean' table='[df_nueva_metrica_clean$]' type='table'>
+          <columns gridOrigin='A1:R11238:no:A1:R11238:0' header='yes' outcome='2'>
+            <column datatype='integer' name='id' ordinal='0' />
+            <column datatype='string' name='amount' ordinal='1' />
+            <column datatype='string' name='status' ordinal='2' />
+            <column datatype='date' name='created_at' ordinal='3' />
+            <column datatype='date' name='updated_at' ordinal='4' />
+            <column datatype='string' name='user_id' ordinal='5' />
+            <column datatype='date' name='moderated_at' ordinal='6' />
+            <column datatype='string' name='deleted_account_id' ordinal='7' />
+            <column datatype='date' name='reimbursement_date' ordinal='8' />
+            <column datatype='date' name='cash_request_received_date' ordinal='9' />
+            <column datatype='date' name='money_back_date' ordinal='10' />
+            <column datatype='string' name='transfer_type' ordinal='11' />
+            <column datatype='date' name='send_at' ordinal='12' />
+            <column datatype='string' name='recovery_status' ordinal='13' />
+            <column datatype='date' name='reco_creation' ordinal='14' />
+            <column datatype='date' name='reco_last_update' ordinal='15' />
+            <column datatype='string' name='payback_delay_days' ordinal='16' />
+            <column datatype='string' name='payback_delay_days_cifra' ordinal='17' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[df_nueva_metrica_clean]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:R11238:no:A1:R11238:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[id]</local-name>
+            <parent-name>[df_nueva_metrica_clean]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[df!nueva!metrica!clean_FF60AEF217E3403E8489F572EB947C9A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>amount</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[amount]</local-name>
+            <parent-name>[df_nueva_metrica_clean]</parent-name>
+            <remote-alias>amount</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[df!nueva!metrica!clean_FF60AEF217E3403E8489F572EB947C9A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>status</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[status]</local-name>
+            <parent-name>[df_nueva_metrica_clean]</parent-name>
+            <remote-alias>status</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[df!nueva!metrica!clean_FF60AEF217E3403E8489F572EB947C9A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>created_at</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[created_at]</local-name>
+            <parent-name>[df_nueva_metrica_clean]</parent-name>
+            <remote-alias>created_at</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[df!nueva!metrica!clean_FF60AEF217E3403E8489F572EB947C9A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>updated_at</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[updated_at]</local-name>
+            <parent-name>[df_nueva_metrica_clean]</parent-name>
+            <remote-alias>updated_at</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[df!nueva!metrica!clean_FF60AEF217E3403E8489F572EB947C9A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>user_id</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[user_id]</local-name>
+            <parent-name>[df_nueva_metrica_clean]</parent-name>
+            <remote-alias>user_id</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[df!nueva!metrica!clean_FF60AEF217E3403E8489F572EB947C9A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>moderated_at</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[moderated_at]</local-name>
+            <parent-name>[df_nueva_metrica_clean]</parent-name>
+            <remote-alias>moderated_at</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[df!nueva!metrica!clean_FF60AEF217E3403E8489F572EB947C9A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>deleted_account_id</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[deleted_account_id]</local-name>
+            <parent-name>[df_nueva_metrica_clean]</parent-name>
+            <remote-alias>deleted_account_id</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[df!nueva!metrica!clean_FF60AEF217E3403E8489F572EB947C9A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reimbursement_date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[reimbursement_date]</local-name>
+            <parent-name>[df_nueva_metrica_clean]</parent-name>
+            <remote-alias>reimbursement_date</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[df!nueva!metrica!clean_FF60AEF217E3403E8489F572EB947C9A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cash_request_received_date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[cash_request_received_date]</local-name>
+            <parent-name>[df_nueva_metrica_clean]</parent-name>
+            <remote-alias>cash_request_received_date</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[df!nueva!metrica!clean_FF60AEF217E3403E8489F572EB947C9A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>money_back_date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[money_back_date]</local-name>
+            <parent-name>[df_nueva_metrica_clean]</parent-name>
+            <remote-alias>money_back_date</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[df!nueva!metrica!clean_FF60AEF217E3403E8489F572EB947C9A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>transfer_type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[transfer_type]</local-name>
+            <parent-name>[df_nueva_metrica_clean]</parent-name>
+            <remote-alias>transfer_type</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[df!nueva!metrica!clean_FF60AEF217E3403E8489F572EB947C9A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>send_at</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[send_at]</local-name>
+            <parent-name>[df_nueva_metrica_clean]</parent-name>
+            <remote-alias>send_at</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[df!nueva!metrica!clean_FF60AEF217E3403E8489F572EB947C9A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>recovery_status</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[recovery_status]</local-name>
+            <parent-name>[df_nueva_metrica_clean]</parent-name>
+            <remote-alias>recovery_status</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[df!nueva!metrica!clean_FF60AEF217E3403E8489F572EB947C9A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reco_creation</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[reco_creation]</local-name>
+            <parent-name>[df_nueva_metrica_clean]</parent-name>
+            <remote-alias>reco_creation</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[df!nueva!metrica!clean_FF60AEF217E3403E8489F572EB947C9A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reco_last_update</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[reco_last_update]</local-name>
+            <parent-name>[df_nueva_metrica_clean]</parent-name>
+            <remote-alias>reco_last_update</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[df!nueva!metrica!clean_FF60AEF217E3403E8489F572EB947C9A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>payback_delay_days</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[payback_delay_days]</local-name>
+            <parent-name>[df_nueva_metrica_clean]</parent-name>
+            <remote-alias>payback_delay_days</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[df!nueva!metrica!clean_FF60AEF217E3403E8489F572EB947C9A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>payback_delay_days_cifra</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[payback_delay_days_cifra]</local-name>
+            <parent-name>[df_nueva_metrica_clean]</parent-name>
+            <remote-alias>payback_delay_days_cifra</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[df!nueva!metrica!clean_FF60AEF217E3403E8489F572EB947C9A]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Payback_delay_days_max' datatype='string' name='[Calculation_684265673168498697]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [payback_delay_days] = { MAX([payback_delay_days]) } THEN [payback_delay_days]&#13;&#10;END' />
+      </column>
+      <column caption='df_nueva_metrica_clean' datatype='table' name='[__tableau_internal_object_id__].[df!nueva!metrica!clean_FF60AEF217E3403E8489F572EB947C9A]' role='measure' type='quantitative' />
+      <column caption='Amount' datatype='string' name='[amount]' role='dimension' type='nominal' />
+      <column caption='Cash Request Received Date' datatype='date' name='[cash_request_received_date]' role='dimension' type='ordinal' />
+      <column caption='Created At' datatype='date' name='[created_at]' role='dimension' type='ordinal' />
+      <column caption='Deleted Account Id' datatype='string' name='[deleted_account_id]' role='dimension' type='nominal' />
+      <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+      <column caption='Moderated At' datatype='date' name='[moderated_at]' role='dimension' type='ordinal' />
+      <column caption='Money Back Date' datatype='date' name='[money_back_date]' role='dimension' type='ordinal' />
+      <column caption='Payback Delay Days' datatype='string' name='[payback_delay_days]' role='dimension' type='nominal' />
+      <column caption='Payback Delay Days Cifra' datatype='integer' datatype-customized='true' name='[payback_delay_days_cifra]' role='dimension' type='ordinal' />
+      <column caption='Reco Creation' datatype='date' name='[reco_creation]' role='dimension' type='ordinal' />
+      <column caption='Reco Last Update' datatype='date' name='[reco_last_update]' role='dimension' type='ordinal' />
+      <column caption='Recovery Status' datatype='string' name='[recovery_status]' role='dimension' type='nominal' />
+      <column caption='Reimbursement Date' datatype='date' name='[reimbursement_date]' role='dimension' type='ordinal' />
+      <column caption='Send At' datatype='date' name='[send_at]' role='dimension' type='ordinal' />
+      <column caption='Status' datatype='string' name='[status]' role='dimension' type='nominal' />
+      <column caption='Transfer Type' datatype='string' name='[transfer_type]' role='dimension' type='nominal' />
+      <column caption='Updated At' datatype='date' name='[updated_at]' role='dimension' type='ordinal' />
+      <column caption='User Id' datatype='string' name='[user_id]' role='dimension' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='es_ES' class='hyper' dbname='C:/Users/Javier/AppData/Local/Temp/TableauTemp/#TableauTemp_0jfold50bcot0t10jth5w1a3k7eg.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='11/10/2025 11:24:31 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>df_nueva_metrica_clean</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>11237</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[df!nueva!metrica!clean_FF60AEF217E3403E8489F572EB947C9A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>amount</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[amount]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>amount</remote-alias>
+              <ordinal>1</ordinal>
+              <family>df_nueva_metrica_clean</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>31</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LES_RES_S2' />
+              <object-id>[df!nueva!metrica!clean_FF60AEF217E3403E8489F572EB947C9A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>status</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[status]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>status</remote-alias>
+              <ordinal>2</ordinal>
+              <family>df_nueva_metrica_clean</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LES_RES_S2' />
+              <object-id>[df!nueva!metrica!clean_FF60AEF217E3403E8489F572EB947C9A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>created_at</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[created_at]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>created_at</remote-alias>
+              <ordinal>3</ordinal>
+              <family>df_nueva_metrica_clean</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>344</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[df!nueva!metrica!clean_FF60AEF217E3403E8489F572EB947C9A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>updated_at</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[updated_at]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>updated_at</remote-alias>
+              <ordinal>4</ordinal>
+              <family>df_nueva_metrica_clean</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>142</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[df!nueva!metrica!clean_FF60AEF217E3403E8489F572EB947C9A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>user_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[user_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>user_id</remote-alias>
+              <ordinal>5</ordinal>
+              <family>df_nueva_metrica_clean</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4227</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LES_RES_S2' />
+              <object-id>[df!nueva!metrica!clean_FF60AEF217E3403E8489F572EB947C9A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>moderated_at</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[moderated_at]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>moderated_at</remote-alias>
+              <ordinal>6</ordinal>
+              <family>df_nueva_metrica_clean</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>357</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[df!nueva!metrica!clean_FF60AEF217E3403E8489F572EB947C9A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>deleted_account_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[deleted_account_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>deleted_account_id</remote-alias>
+              <ordinal>7</ordinal>
+              <family>df_nueva_metrica_clean</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>392</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LES_RES_S2' />
+              <object-id>[df!nueva!metrica!clean_FF60AEF217E3403E8489F572EB947C9A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>reimbursement_date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[reimbursement_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>reimbursement_date</remote-alias>
+              <ordinal>8</ordinal>
+              <family>df_nueva_metrica_clean</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>181</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[df!nueva!metrica!clean_FF60AEF217E3403E8489F572EB947C9A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>cash_request_received_date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[cash_request_received_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>cash_request_received_date</remote-alias>
+              <ordinal>9</ordinal>
+              <family>df_nueva_metrica_clean</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>354</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[df!nueva!metrica!clean_FF60AEF217E3403E8489F572EB947C9A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>money_back_date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[money_back_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>money_back_date</remote-alias>
+              <ordinal>10</ordinal>
+              <family>df_nueva_metrica_clean</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>363</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[df!nueva!metrica!clean_FF60AEF217E3403E8489F572EB947C9A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>transfer_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[transfer_type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>transfer_type</remote-alias>
+              <ordinal>11</ordinal>
+              <family>df_nueva_metrica_clean</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LES_RES_S2' />
+              <object-id>[df!nueva!metrica!clean_FF60AEF217E3403E8489F572EB947C9A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>send_at</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[send_at]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>send_at</remote-alias>
+              <ordinal>12</ordinal>
+              <family>df_nueva_metrica_clean</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>133</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[df!nueva!metrica!clean_FF60AEF217E3403E8489F572EB947C9A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>recovery_status</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[recovery_status]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>recovery_status</remote-alias>
+              <ordinal>13</ordinal>
+              <family>df_nueva_metrica_clean</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LES_RES_S2' />
+              <object-id>[df!nueva!metrica!clean_FF60AEF217E3403E8489F572EB947C9A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>reco_creation</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[reco_creation]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>reco_creation</remote-alias>
+              <ordinal>14</ordinal>
+              <family>df_nueva_metrica_clean</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>221</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[df!nueva!metrica!clean_FF60AEF217E3403E8489F572EB947C9A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>reco_last_update</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[reco_last_update]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>reco_last_update</remote-alias>
+              <ordinal>15</ordinal>
+              <family>df_nueva_metrica_clean</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>260</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[df!nueva!metrica!clean_FF60AEF217E3403E8489F572EB947C9A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>payback_delay_days</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[payback_delay_days]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>payback_delay_days</remote-alias>
+              <ordinal>16</ordinal>
+              <family>df_nueva_metrica_clean</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>175</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LES_RES_S2' />
+              <object-id>[df!nueva!metrica!clean_FF60AEF217E3403E8489F572EB947C9A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>payback_delay_days_cifra</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[payback_delay_days_cifra]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>payback_delay_days_cifra</remote-alias>
+              <ordinal>17</ordinal>
+              <family>df_nueva_metrica_clean</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>175</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LES_RES_S2' />
+              <object-id>[df!nueva!metrica!clean_FF60AEF217E3403E8489F572EB947C9A]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;España&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='df_nueva_metrica_clean' id='df!nueva!metrica!clean_FF60AEF217E3403E8489F572EB947C9A'>
+            <properties context=''>
+              <relation connection='excel-direct.1p8vnc81wqd5hb1fxebb70jkhsjn' name='df_nueva_metrica_clean' table='[df_nueva_metrica_clean$]' type='table'>
+                <columns gridOrigin='A1:R11238:no:A1:R11238:0' header='yes' outcome='2'>
+                  <column datatype='integer' name='id' ordinal='0' />
+                  <column datatype='string' name='amount' ordinal='1' />
+                  <column datatype='string' name='status' ordinal='2' />
+                  <column datatype='date' name='created_at' ordinal='3' />
+                  <column datatype='date' name='updated_at' ordinal='4' />
+                  <column datatype='string' name='user_id' ordinal='5' />
+                  <column datatype='date' name='moderated_at' ordinal='6' />
+                  <column datatype='string' name='deleted_account_id' ordinal='7' />
+                  <column datatype='date' name='reimbursement_date' ordinal='8' />
+                  <column datatype='date' name='cash_request_received_date' ordinal='9' />
+                  <column datatype='date' name='money_back_date' ordinal='10' />
+                  <column datatype='string' name='transfer_type' ordinal='11' />
+                  <column datatype='date' name='send_at' ordinal='12' />
+                  <column datatype='string' name='recovery_status' ordinal='13' />
+                  <column datatype='date' name='reco_creation' ordinal='14' />
+                  <column datatype='date' name='reco_last_update' ordinal='15' />
+                  <column datatype='string' name='payback_delay_days' ordinal='16' />
+                  <column datatype='string' name='payback_delay_days_cifra' ordinal='17' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Median por transfer type'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='df_nueva_metrica_clean (df_nueva_metrica_clean)' name='federated.0ittgv20shrknj123sqq30rvmt96' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ittgv20shrknj123sqq30rvmt96'>
+            <column-instance column='[payback_delay_days_cifra]' derivation='Median' name='[med:payback_delay_days_cifra:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[transfer_type]' derivation='None' name='[none:transfer_type:nk]' pivot='key' type='nominal' />
+            <column caption='Payback Delay Days Cifra' datatype='integer' datatype-customized='true' name='[payback_delay_days_cifra]' role='dimension' type='ordinal' />
+            <column caption='Transfer Type' datatype='string' name='[transfer_type]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0ittgv20shrknj123sqq30rvmt96].[none:transfer_type:nk]' value='120' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#72b966' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0ittgv20shrknj123sqq30rvmt96].[med:payback_delay_days_cifra:qk]</rows>
+        <cols>[federated.0ittgv20shrknj123sqq30rvmt96].[none:transfer_type:nk]</cols>
+      </table>
+      <simple-id uuid='{9FB86E0E-0D1D-4CB6-9889-8E3ED6FA24FE}' />
+    </worksheet>
+    <worksheet name='Prom por mes'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Promedio de tiempo de devolución por mes
+</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='df_nueva_metrica_clean (df_nueva_metrica_clean)' name='federated.0ittgv20shrknj123sqq30rvmt96' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ittgv20shrknj123sqq30rvmt96'>
+            <column-instance column='[payback_delay_days_cifra]' derivation='Avg' name='[avg:payback_delay_days_cifra:qk]' pivot='key' type='quantitative' />
+            <column caption='Created At' datatype='date' name='[created_at]' role='dimension' type='ordinal' />
+            <column-instance column='[created_at]' derivation='MY' name='[my:created_at:ok]' pivot='key' type='ordinal' />
+            <column caption='Payback Delay Days Cifra' datatype='integer' datatype-customized='true' name='[payback_delay_days_cifra]' role='dimension' type='ordinal' />
+            <column-instance column='[created_at]' derivation='Year' name='[yr:created_at:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0ittgv20shrknj123sqq30rvmt96].[yr:created_at:ok]'>
+            <groupfilter function='member' level='[yr:created_at:ok]' member='2020' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0ittgv20shrknj123sqq30rvmt96].[yr:created_at:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0ittgv20shrknj123sqq30rvmt96].[avg:payback_delay_days_cifra:qk]' scope='rows' value='Prom. Payback Delay Days' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0ittgv20shrknj123sqq30rvmt96].[my:created_at:ok]' value='118' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+            <format attr='stroke-color' id='refline0' value='#59a14f4b' />
+            <format attr='fill-above' id='refline1' value='#00000000' />
+            <format attr='fill-below' id='refline1' value='#00000000' />
+            <format attr='fill-above' id='refline2' value='#00000000' />
+            <format attr='fill-below' id='refline2' value='#00000000' />
+            <format attr='stroke-color' id='refline2' value='#ff00004b' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <reference-line axis-column='[federated.0ittgv20shrknj123sqq30rvmt96].[avg:payback_delay_days_cifra:qk]' enable-instant-analytics='true' formula='average' id='refline0' label-type='value' probability='95' scope='per-pane' tooltip='Promedio total' tooltip-type='custom' value-column='[federated.0ittgv20shrknj123sqq30rvmt96].[avg:payback_delay_days_cifra:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#72b966' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0ittgv20shrknj123sqq30rvmt96].[avg:payback_delay_days_cifra:qk]</rows>
+        <cols>[federated.0ittgv20shrknj123sqq30rvmt96].[my:created_at:ok]</cols>
+      </table>
+      <simple-id uuid='{AEE4B507-258C-4567-8567-8C17068DDF65}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='51'>
+    <window class='worksheet' name='Prom por mes'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='175'>
+            <card mode='type_in' param='[Parameters].[Parámetro 1]' type='parameter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0ittgv20shrknj123sqq30rvmt96].[mn:created_at:ok]</field>
+            <field>[federated.0ittgv20shrknj123sqq30rvmt96].[none:Calculation_684265673163227141:qk]</field>
+            <field>[federated.0ittgv20shrknj123sqq30rvmt96].[none:payback_delay_days_cifra:nk]</field>
+            <field>[federated.0ittgv20shrknj123sqq30rvmt96].[tyr:created_at:qk]</field>
+            <field>[federated.0ittgv20shrknj123sqq30rvmt96].[yr:created_at:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{0A75F1D6-B63D-4023-9F13-563C0E6FCA2D}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Median por transfer type'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0ittgv20shrknj123sqq30rvmt96].[none:amount:nk]</field>
+            <field>[federated.0ittgv20shrknj123sqq30rvmt96].[none:payback_delay_days_cifra:nk]</field>
+            <field>[federated.0ittgv20shrknj123sqq30rvmt96].[none:recovery_status:nk]</field>
+            <field>[federated.0ittgv20shrknj123sqq30rvmt96].[none:status:nk]</field>
+            <field>[federated.0ittgv20shrknj123sqq30rvmt96].[none:transfer_type:nk]</field>
+            <field>[federated.0ittgv20shrknj123sqq30rvmt96].[yr:created_at:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{2383BB34-87C8-4FA7-AA5A-E7CA152C8CD5}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Median por transfer type' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Prom por mes' width='192'>
+      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
+      skXNSgAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
